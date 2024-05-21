@@ -8,7 +8,7 @@ export default function LightDarkToggle() {
         setDarkMode(!darkMode);
         document.body.classList.toggle("dark");
     }
-    if(darkMode) {
+    if(!darkMode) {
         return (
             <button className="bg-gray-200 p-2 rounded text-center cursor-pointer items-center flex" onClick={darkLightToggle}>
                 <svg width="16" height="16" viewBox="0 0 16 16">
