@@ -1,7 +1,7 @@
 import TextTyper from "@/app/components/ui/TextTyper";
 export default function About() {
     return(
-        <div className="grow flex">
+        <div className="grow flex" id="about">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-8 md:px-16 lg:px-32 mt-4 md:my-auto mx-auto w-full">
                 <div className="flex order-2 md:order-1">
                     <div className="my-auto">

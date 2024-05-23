@@ -9,6 +9,18 @@ export default function Header() {
         setNavbarOpen(!navBarOpen);
     }
 
+    const scrollPage = (e:any) => {
+        console.log(e);
+        let section = e.target.dataset.section;
+        console.log(section);
+        if(section) {
+            let element = document.getElementById(section);
+            if(element) {
+                element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            }
+        }
+    }
+
     return (
         <header className="flex items-center flex-wrap justify-between px-8 md:px-16 lg:px-32 bg-white py-4 shadow-2xl dark:bg-neutral-800 dark:text-neutral-400">
             <div className="bg-black dark:hover:bg-sky-300 hover:bg-sky-700 text-white p-2 text-2xl rounded cursor-pointer ">
@@ -23,10 +35,10 @@ export default function Header() {
            
             <div id="navbar-default" className={`${navBarOpen ? 'mt-4' : 'hidden'}  w-full md:block md:w-auto`}>
                 <ul className="flex flex-col md:flex-row items-center gap-12 uppercase text-xs text-right inline ">
-                    <li><a className="dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" href="#">About</a></li>
-                    <li><a className="dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" href="#">Skills</a></li>
-                    <li><a className="dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" href="#">Projects</a></li>
-                    <li><a className="dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" href="#">Contact</a></li>
+                    <li><a className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="about">About</a></li>
+                    <li><a className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="skills">Skills</a></li>
+                    <li><a className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="projects">Projects</a></li>
+                    <li><a className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="contact">Contact</a></li>
                     <li>
                         <a className="dark:hover:text-sky-300 hover:text-sky-700" aria-label="github" href="https://github.com/CordMarston" target="_blank">
                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 496 512" height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">

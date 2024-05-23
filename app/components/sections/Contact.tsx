@@ -83,7 +83,7 @@ export default function Contact() {
     }, []);
     
     return (
-        <div className="px-4 md:px-16 lg:px-32 md:my-auto w-full min-h-screen flex">
+        <div className="px-4 md:px-16 lg:px-32 md:my-auto w-full min-h-screen flex" id="contact">
             <div className="my-auto w-full">
                 <h2 className="text-3xl font-bold tracking-[-0.1rem] leading-[120%] dark:text-neutral-200 pb-4">Contact</h2>
                 <div className="text-2xl bg-neutral-50 dark:bg-neutral-800 rounded p-5 flex justify-center">
