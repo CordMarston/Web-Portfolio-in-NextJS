@@ -4,10 +4,10 @@ import { DiJqueryLogo, DiPostgresql } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript, SiMysql, SiProxmox } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import onScreen from "@/app/components/hooks/OnScreen";
+import useOnScreen from "@/app/components/hooks/OnScreen";
 
 export default function Skills() {
-    const { isInViewport, ref } = onScreen();
+    const { isInViewport, ref } = useOnScreen();
     return (
         <div className="min-h-screen flex mt-16 md:mt-0" ref={ref} id="skills">
             <div className="px-4 md:px-16 lg:px-32 md:my-auto w-full">

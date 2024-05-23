@@ -60,7 +60,7 @@ export default function Contact() {
             placeholder = 'Type your question or note here :)';
             break;
         case 'thanks':
-            // sendEmail();
+            sendEmail();
             break;
     }
 
@@ -80,7 +80,7 @@ export default function Contact() {
                 formInput.removeEventListener('keyup', keyPressed);
             }
         }
-    }, []);
+    });
     
     return (
         <div className="px-4 md:px-16 lg:px-32 md:my-auto w-full min-h-screen flex" id="contact">
@@ -93,11 +93,11 @@ export default function Contact() {
                             <div className="bg-emerald-700 text-white p-4 rounded-lg text-center">Thank you for reaching out!</div>
                         : <>
                             {steps[step] != 'message' ? 
-                                <input type="text" className="w-full p-5 text-lg border-b-2" placeholder={placeholder} id="formInput"/> 
+                                <input type="text" className="w-full p-5 text-lg border-b-2 bg-neutral-50 dark:bg-neutral-800 dark:text-neutral-50" placeholder={placeholder} id="formInput"/> 
                             : 
                                 <textarea className="w-full p-5 text-lg border-b-2" placeholder={placeholder} id="formInput"></textarea>}
                                 <div className="grid justify-items-end">
-                                    <button onClick={handleButton} className="my-4 block py-2 px-4 bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">Continue</button>
+                                    <button onClick={handleButton} className="my-4 block py-2 px-4 bg-neutral-600 hover:bg-neutral-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">Continue</button>
                                 </div>
                             </>
                         }

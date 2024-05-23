@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 
-export default function onScreen(): { isInViewport: boolean; ref: React.RefCallback<HTMLElement> } {
+export default function useOnScreen(): { isInViewport: boolean; ref: React.RefCallback<HTMLElement> } {
     const [isInViewport, setIsInViewport] = useState(false);
     const [refElement, setRefElement] = useState<HTMLElement | null>(null);
 

@@ -29,5 +29,6 @@ COPY --from=builder /app/package.json ./package.json
 EXPOSE 1738
 
 ENV PORT 1738
-
-CMD ["npm", "start"]
+# CMD HOSTNAME="0.0.0.0" node server.js
+# CMD ["node", "server.js"]
+# CMD ["npm", "start"]

@@ -5,19 +5,16 @@ services:
     build:
       context: ./
       target: runner
+    tty: true 
+    stdin_open: true
+    command: npm run start
     volumes:
       - .:/app
-    command: npm run dev
     ports:
       - "1738:1738"
-    restart: always
-    environment:
-      NODE_ENV: development
     networks:
       - npmnetwork
 networks:
   npmnetwork:
     external: true
     driver: bridge
-volumes:
-  pgdata:
