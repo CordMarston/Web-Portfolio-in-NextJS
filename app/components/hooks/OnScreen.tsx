@@ -16,7 +16,7 @@ export default function onScreen(): { isInViewport: boolean; ref: React.RefCallb
             let options = {
                 root: null,
                 rootMargin: "0px",
-                threshold: 0.5,
+                threshold: 0.3,
             };
 
             const observer = new IntersectionObserver(([entry]) => entry.isIntersecting && setIsInViewport(true), options);
