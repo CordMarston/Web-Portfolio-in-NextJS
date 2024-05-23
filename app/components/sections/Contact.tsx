@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Contact() {
     const [fullName, setFullName] = useState('');
-    const [step, setStep] = useState(3);
+    const [step, setStep] = useState(0);
     const [emailAddress, setEmailAddress] = useState('');
     const [message, setMessage] = useState('');
 
