@@ -1,7 +1,9 @@
+import { ImNewTab } from "react-icons/im";
+
 type CardProps = {
     title: string,
     image: string,
-    link: string,
+    link?: string,
     github?: string,
     children: React.ReactNode
 }
@@ -9,9 +11,18 @@ type CardProps = {
 export default function Card({title, image, link, github, children}:CardProps) {
     return (
         <div className="block rounded-lg bg-neutral-50 dark:bg-neutral-800 relative">
-            <a href={link} target="_blank">
-                <img className="rounded-t-lg" src={image} alt={title} />
-            </a>
+            <div className="relative">
+                {link ? 
+                    <a href={link} target="_blank" className="">
+                        <img className="rounded-t-lg" src={image} alt={title} />
+                        <div className="flex content-center items-center justify-center	text-6xl text-white text-center absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-neutral-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-85">
+                            <ImNewTab />
+                        </div>
+                    </a>
+                : 
+                    <img className="rounded-t-lg" src={image} alt={title} />
+                }
+            </div>
             <div className="p-6 text-surface dark:text-white">
                 <h5 className="text-xl font-bold tracking-[-0.1rem] leading-[120%] dark:text-neutral-200 pb-4">{ title }</h5>
                 <div className="flex flex-col justify-content-between h-full text-neutral-500 dark:text-neutral-400 leading-[1.25rem]">

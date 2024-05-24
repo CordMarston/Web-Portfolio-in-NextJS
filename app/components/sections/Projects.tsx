@@ -14,7 +14,7 @@ export default function Projects() {
                         <p className="md:min-h-36 lg:min-h-28">MPGTracker is a simple oAUTH app that allows you to register your cars and track your gas milage with a line chart.</p>
                         <p className="mt-4 min-h-10"><span className="font-bold">Stack:</span> NextJS, React, Typescript, Tailwind, Docker, Postgres</p>
                     </Card>
-                    <Card title="Dashboard V2" image="./projects/dashboardv2.png" link="#">
+                    <Card title="Dashboard V2" image="./projects/dashboardv2.png">
                         <p className="md:min-h-36 lg:min-h-28">Dashboard V2 is a superior version of Dashboard built using modern frameworks. It includes a ticketing system, billing system, HR system & CRM with build in VoIP integration.</p>
                         <p className="mt-4 min-h-10"><span className="font-bold">Stack:</span> Vue, Laravel, Bootstrap, Docker, MySQL, Node</p>
                     </Card>
@@ -26,7 +26,7 @@ export default function Projects() {
                         <p className="md:min-h-36 lg:md:min-h-36 lg:min-h-28">A local diesel repair shop Wordpress site featuring WooCommerce for selling parts. The project feature complete design, logo, website, store and advertising.</p>
                         <p className="mt-4 min-h-10"><span className="font-bold">Stack:</span> Wordpress, PHP, Apache, MySQL, Photoshop, CSS</p>
                     </Card>
-                    <Card title="Cars & Truck Wallpapers" image="./projects/cartruckwallpaper.png" link="#">
+                    <Card title="Cars & Truck Wallpapers" image="./projects/cartruckwallpaper.png">
                         <p className="md:min-h-36 lg:min-h-28">The Cars & Truck Wallpaper app was my first crack at developing an app in Android Studio. The app featured hundreds of vehicle wallpapers, stats on downloads and a way for users to submit their own vehicle.</p>
                         <p className="mt-4 min-h-10"><span className="font-bold">Stack:</span> Android Studio, Java, MySQL, PHP</p>
                     </Card>
@@ -36,7 +36,7 @@ export default function Projects() {
                     </Card>
                     <Card title="Games" image="./projects/games.png" link="https://games.cordmarston.com" github="https://github.com/CordMarston/NextJS-React-Mini-Games">
                         <p className="md:min-h-36 lg:min-h-28">This is a mini game site that I work on in my free time. It contains simple games such as hangman, memory & more made in React.</p>
-                        <p className="mt-4 min-h-10"><span className="font-bold">Stack:</span> NextJS, React, Docker, Tailwind, Typescript, Postgres</p>
+                        <p className="mt-4 min-h-10"><span className="font-bold">Stack:</span> NextJS, React, Prisma, Docker, Tailwind, Typescript, Postgres</p>
                     </Card>
                     <Card title="Z Networks" image="./projects/znetworks.png" link="https://znetworks.com">
                         <p className="md:min-h-36 lg:min-h-28">Z Networks wanted a mobile responsive website that tell visitors about their business. The site includes various "widgets" like a contact form, map, Facebook feed and more.</p>
