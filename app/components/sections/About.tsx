@@ -5,7 +5,7 @@ import ProfilePic from '@/public/cordmarston.jpg'
 export default function About() {
     return(
         <div className="grow flex" id="about">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-8 md:px-16 lg:px-32 mt-4 md:my-auto mx-auto w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-8 md:px-16 lg:px-32 mt-4 md:my-auto mx-auto w-full py-8">
                 <div className="flex order-2 md:order-1">
                     <div className="my-auto">
                     <h1 className="text-4xl font-bold tracking-[-0.1rem] leading-[120%] max-w-[45rem] pb-4 dark:text-neutral-200 min-h-28 md:min-h-16"><TextTyper text={`Hello there, I'm Cord Marston`} delay={75} infinite={false} /></h1>

@@ -10,9 +10,7 @@ export default function Header() {
     }
 
     const scrollPage = (e:any) => {
-        console.log(e);
         let section = e.target.dataset.section;
-        console.log(section);
         if(section) {
             let element = document.getElementById(section);
             if(element) {
