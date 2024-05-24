@@ -7,23 +7,36 @@ export default function Contact() {
     const [step, setStep] = useState(0);
     const [emailAddress, setEmailAddress] = useState('');
     const [message, setMessage] = useState('');
+    const [error, setError] = useState('');
 
     const steps = ['name', 'email', 'message', 'thanks'];
+
+    const isValidEmail = (email:string) => {
+        const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return pattern.test(email);
+    }
 
     let question, placeholder;
 
     const handleButton = () => {
         let nextStep = step + 1;
         let inputField = document.getElementById("formInput") as HTMLInputElement;
+        setError('');
         if(steps[step] == 'name') {
             if(inputField.value) {
                 setFullName(inputField.value);
                 setStep(nextStep);
+                inputField.value = "";
             }
         } else if(steps[step] == 'email') {
             if(inputField.value) {
-                setEmailAddress(inputField.value);
-                setStep(nextStep);
+                if(isValidEmail(inputField.value)) {
+                    setEmailAddress(inputField.value);
+                    setStep(nextStep);
+                    inputField.value = "";
+                } else {
+                    setError('Invalid email address');
+                }                
             }
         } else if(steps[step] == 'message') {
             if(inputField.value) {
@@ -31,7 +44,6 @@ export default function Contact() {
                 setStep(nextStep);
             }
         }
-        inputField.value = "";
     }
 
     const sendEmail = async () => {
@@ -92,8 +104,12 @@ export default function Contact() {
                         {steps[step] == 'thanks' ? 
                             <div className="bg-emerald-700 text-white p-4 rounded-lg text-center">Thank you for reaching out!</div>
                         : <>
+                            
                             {steps[step] != 'message' ? 
-                                <input type="text" className="w-full p-5 text-lg border-b-2 bg-neutral-50 dark:bg-neutral-800 dark:text-neutral-50" placeholder={placeholder} id="formInput"/> 
+                                <div>
+                                    <input type="text" className={`w-full p-5 text-lg border-b-2 bg-neutral-50 dark:bg-neutral-800 dark:text-neutral-50` + (error.length > 0 ? ' border-pink-500 text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500' : ' ')} placeholder={placeholder} id="formInput"/> 
+                                    <div className="text-pink-600 text-sm pt-2 inline">{ error }</div>
+                                </div>
                             : 
                                 <textarea className="w-full p-5 text-lg border-b-2" placeholder={placeholder} id="formInput"></textarea>}
                                 <div className="grid justify-items-end">

@@ -8,6 +8,8 @@ services:
     tty: true 
     stdin_open: true
     command: npm run start
+    environment:
+      NODE_ENV: production
     volumes:
       - .:/app
     ports:
