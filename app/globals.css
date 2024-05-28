@@ -18,6 +18,9 @@
   border-bottom-left-radius: 0.25rem; /* 4px */
   border-bottom-right-radius: 0.25rem; /* 4px */
   background-color:#FFF;
-  min-height:200px;
   border-color:#e5e7eb!important;
+}
+
+.ql-editor {
+  min-height:200px;
 }
