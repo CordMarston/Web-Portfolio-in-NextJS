@@ -1,4 +1,4 @@
-import LightDarkToggle from "@/app/components/ui/LightDarkToggle"
+import LightDarkToggle from "@/components/ui/LightDarkToggle"
 
 export default function PortfolioNav() {
     const scrollPage = (e:any) => {

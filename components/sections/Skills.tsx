@@ -4,7 +4,7 @@ import { DiJqueryLogo, DiPostgresql } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript, SiMysql, SiProxmox } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import useOnScreen from "@/app/components/hooks/OnScreen";
+import useOnScreen from "@/components/hooks/OnScreen";
 
 export default function Skills() {
     const { isInViewport, ref } = useOnScreen();

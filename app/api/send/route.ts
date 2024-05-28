@@ -1,5 +1,5 @@
-import { ContactEmail } from "@/app/components/emails/Contact";
-import { ContactInternal } from "@/app/components/emails/ContactInternal";
+import { ContactEmail } from "@/components/emails/Contact";
+import { ContactInternal } from "@/components/emails/ContactInternal";
 import { NextRequest } from "next/server";
 import { Resend } from 'resend';
 

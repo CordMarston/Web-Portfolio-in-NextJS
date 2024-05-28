@@ -7,9 +7,9 @@ services:
       target: runner
     tty: true 
     stdin_open: true
-    command: npm run dev
+    command: npm run start
     environment:
-      NODE_ENV: development
+      NODE_ENV: production
     volumes:
       - .:/app
     ports:

@@ -1,4 +1,4 @@
-import TextTyper from "@/app/components/ui/TextTyper";
+import TextTyper from "@/components/ui/TextTyper";
 import Image from 'next/image'
 import ProfilePic from '@/public/cordmarston.jpg'
 

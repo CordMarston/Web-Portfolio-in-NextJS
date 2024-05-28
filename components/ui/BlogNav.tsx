@@ -1,5 +1,5 @@
 "use client";
-import LightDarkToggle from "@/app/components/ui/LightDarkToggle"
+import LightDarkToggle from "@/components/ui/LightDarkToggle"
 import Link from "next/link"
 import { useSession } from "next-auth/react"
 import LoggedUserButton from "./auth/LoggedUserButton";

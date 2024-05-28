@@ -1,8 +1,8 @@
 "use client";
 import {useState} from 'react';
 import Link from 'next/link'
-import PortfolioNav from "@/app/components/ui/PortfolioNav";
-import BlogNav from "@/app/components/ui/BlogNav";
+import PortfolioNav from "@/components/ui/PortfolioNav";
+import BlogNav from "@/components/ui/BlogNav";
 
 type HeaderProps = {
     blog?: boolean

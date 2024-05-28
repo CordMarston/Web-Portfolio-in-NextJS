@@ -1,8 +1,8 @@
-import Header from "@/app/components/ui/Header";
-import Skills from "@/app/components/sections/Skills";
-import About from "@/app/components/sections/About";
-import Projects from "@/app/components/sections/Projects";
-import Contact from "@/app/components/sections/Contact";
+import Header from "@/components/ui/Header";
+import Skills from "@/components/sections/Skills";
+import About from "@/components/sections/About";
+import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
