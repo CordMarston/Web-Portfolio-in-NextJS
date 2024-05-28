@@ -1,4 +1,4 @@
-import Header from "@/app/components/Header";
+import Header from "@/app/components/ui/Header";
 import Skills from "@/app/components/sections/Skills";
 import About from "@/app/components/sections/About";
 import Projects from "@/app/components/sections/Projects";

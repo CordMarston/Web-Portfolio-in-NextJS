@@ -13,7 +13,7 @@ export default function About() {
                     <p className="leading-[2.25rem] text-neutral-600 dark:text-neutral-400 mt-4">Outside of being a developer I am a father and love watching and helping my kids pursue sports. We stay busy between baseball, basketball, football & cheer.</p>
                     </div>
                 </div>
-                <div className="py-4 object-right order-1 md:order-2">
+                <div className="py-4 object-right order-1 md:order-2 my-auto">
                     <Image src={ProfilePic} alt="Cord Marston 2023" className="float-right rounded-lg w-full lg:max-w-[80%]"/>
                 </div>
             </div>

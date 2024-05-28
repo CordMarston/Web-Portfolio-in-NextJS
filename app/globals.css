@@ -7,3 +7,17 @@
     text-wrap: balance;
   }
 }
+
+.ql-toolbar {
+    border-top-left-radius: 0.25rem; /* 4px */
+    border-top-right-radius: 0.25rem; /* 4px */
+    border-color:#e5e7eb!important;
+}
+
+.ql-container {
+  border-bottom-left-radius: 0.25rem; /* 4px */
+  border-bottom-right-radius: 0.25rem; /* 4px */
+  background-color:#FFF;
+  min-height:200px;
+  border-color:#e5e7eb!important;
+}
