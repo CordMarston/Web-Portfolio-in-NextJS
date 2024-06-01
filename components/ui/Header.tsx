@@ -16,7 +16,8 @@ export default function Header({blog}:HeaderProps) {
     }
 
     return (
-        <header className="flex items-center flex-wrap justify-between px-8 md:px-16 lg:px-32 bg-white py-4 shadow-2xl dark:bg-neutral-800 dark:text-neutral-400">
+        <header className="bg-white py-4 shadow-2xl dark:bg-neutral-800 dark:text-neutral-400">
+            <div className="flex items-center flex-wrap justify-between max-w-8xl px-8 md:px-16 lg:px-32 mx-auto">
             <Link  href="/" className="bg-black dark:hover:bg-sky-300 hover:bg-sky-700 text-white p-2 text-2xl rounded cursor-pointer ">
                 CM
             </Link>
@@ -29,6 +30,7 @@ export default function Header({blog}:HeaderProps) {
            
             <div id="navbar-default" className={`${navBarOpen ? 'mt-4' : 'hidden'}  w-full md:block md:w-auto`}>
                 {blog? <BlogNav/> : <PortfolioNav/>}
+            </div>
             </div>
         </header>
     )

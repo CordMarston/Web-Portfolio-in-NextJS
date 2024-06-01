@@ -13,14 +13,14 @@ export default function Card({title, image, link, github, children}:CardProps) {
         <div className="block rounded-lg bg-neutral-50 dark:bg-neutral-800 relative">
             <div className="relative">
                 {link ? 
-                    <a href={link} target="_blank" className="">
-                        <img className="rounded-t-lg" src={image} alt={title} />
-                        <div className="flex content-center items-center justify-center	text-6xl text-white text-center absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-neutral-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-85">
+                    <a href={link} target="_blank" className="group">
+                        <img className="rounded-t-lg grayscale group-hover:grayscale-[75%]" src={image} alt={title} />
+                        <div className="flex content-center items-center justify-center	text-6xl text-white text-center absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden  bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-85">
                             <ImNewTab />
                         </div>
                     </a>
                 : 
-                    <img className="rounded-t-lg" src={image} alt={title} />
+                    <img className="rounded-t-lg grayscale hover:grayscale-[75%]" src={image} alt={title} />
                 }
             </div>
             <div className="p-6 text-surface dark:text-white">

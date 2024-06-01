@@ -2,9 +2,9 @@ import Card from "@/components/ui/Card";
 
 export default function Projects() {
     return (
-        <div className="px-4 md:px-16 lg:px-32 min-h-screen flex py-8" id="projects">
+        <div className="px-4 md:px-16 lg:px-32 flex py-8 max-w-8xl mx-auto" id="projects">
             <div className="my-auto w-full">
-                <h2 className="text-3xl font-bold tracking-[-0.1rem] leading-[120%] dark:text-neutral-200 pb-4">Projects</h2>
+                <h2 className="text-2xl font-bold tracking-[-0.1rem] leading-[120%] dark:text-neutral-200 pb-4">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <Card title="mBTC to USD" image="./projects/mbtctousd.png" link="https://mbtc.cordmarston.com" github="https://github.com/CordMarston/mBTC-to-USD-in-NextJS">
                         <p className="md:min-h-36 lg:min-h-28">I was tired of going to an exchange to get the BTC price, converting it to mBtc and then calculating the USD amount so I figured why not make a simple calculator.</p>

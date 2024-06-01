@@ -8,6 +8,10 @@
   }
 }
 
+.max-w-8xl {
+  max-width: 88rem;
+}
+
 .ql-toolbar {
     border-top-left-radius: 0.25rem; /* 4px */
     border-top-right-radius: 0.25rem; /* 4px */
