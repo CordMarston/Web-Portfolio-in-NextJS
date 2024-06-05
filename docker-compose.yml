@@ -7,7 +7,7 @@ services:
       target: runner
     tty: true 
     stdin_open: true
-    command: npm run dev
+    command: npm run start
     volumes:
       - .:/app
     ports:

@@ -95,10 +95,10 @@ export default function Contact() {
     });
     
     return (
-        <div className="px-4 md:px-16 lg:px-32 md:my-auto w-full mx-auto max-w-8xl flex py-8" id="contact">
+        <div className="px-4 md:px-16 lg:px-32 md:my-auto w-full mx-auto max-w-7xl flex py-8" id="contact">
             <div className="my-auto w-full">
                 <h2 className="text-2xl font-bold tracking-[-0.1rem] leading-[120%] dark:text-neutral-200 pb-4">Contact</h2>
-                <div className="text-2xl bg-neutral-50 dark:bg-neutral-800 rounded p-5 flex justify-center">
+                <div className="text-2xl rounded p-5 flex justify-center">
                     <div className="w-full md:w-1/2">
                         <h5 className="text-xl font-bold tracking-[-0.1rem] leading-[120%] dark:text-neutral-200 pb-4">{question}</h5>
                         {steps[step] == 'thanks' ? 

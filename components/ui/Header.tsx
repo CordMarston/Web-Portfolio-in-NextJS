@@ -16,8 +16,8 @@ export default function Header({blog}:HeaderProps) {
     }
 
     return (
-        <header className="bg-white py-4 shadow-2xl dark:bg-neutral-800 dark:text-neutral-400">
-            <div className="flex items-center flex-wrap justify-between max-w-8xl px-8 md:px-16 lg:px-32 mx-auto">
+        <header className="py-4 shadow-xl dark:bg-neutral-800 dark:text-neutral-400">
+            <div className="flex items-center flex-wrap justify-between max-w-7xl px-8 md:px-16 lg:px-32 mx-auto">
             <Link  href="/" className="bg-black dark:hover:bg-sky-300 hover:bg-sky-700 text-white p-2 text-2xl rounded cursor-pointer ">
                 CM
             </Link>

@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 15px
+}
+
+.radial-gradient {
+  position:fixed;
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  background: #9b59b6;
+  background: 
+    radial-gradient(
+     at center, #3498db, #9b59b6
+    );
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
