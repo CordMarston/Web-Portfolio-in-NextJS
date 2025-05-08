@@ -1,17 +1,18 @@
 version: '3.8'
 services:
   web:
-    container_name: portfolio_cordmarston_com
+    container_name: ssd_portfolio_cordmarston_com
     build:
       context: ./
       target: runner
     tty: true 
     stdin_open: true
     command: npm run start
+    restart: always
     volumes:
       - .:/app
     ports:
-      - "1738:1738"
+      - "1718:1718"
     networks:
       - npmnetwork
 networks:

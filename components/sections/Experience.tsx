@@ -1,6 +1,6 @@
 export default function Experience() {
     return (
-        <div className="px-4 md:px-16 lg:px-32 flex py-8 max-w-7xl mx-auto" id="projects">
+        <div className="px-4 md:px-16 lg:px-32 flex py-8 max-w-7xl mx-auto" id="experience">
             <div className="my-auto w-full">
                 <h2 className="text-2xl font-bold tracking-[-0.1rem] leading-[120%] dark:text-neutral-200 pb-4">Experience</h2>
                 <ol className="relative border-s border-neutral-200 dark:border-neutral-700">                  
