@@ -13,13 +13,13 @@ export default function LightDarkToggle() {
     }
     if(!darkMode) {
         return (
-            <button className="bg-neutral-200 p-2 rounded text-center cursor-pointer items-center flex text-xl" onClick={darkLightToggle}>
+            <button className="bg-neutral-200 p-2 rounded text-center cursor-pointer items-center flex text-xl"  aria-label="Page Dark Mode" onClick={darkLightToggle}>
                 <MdOutlineDarkMode />
             </button>
         )
     } else {
         return (
-            <button className="bg-neutral-600 p-2 rounded text-center cursor-pointer items-center flex text-xl" onClick={darkLightToggle}>
+            <button className="bg-neutral-600 p-2 rounded text-center cursor-pointer items-center flex text-xl"  aria-label="Page Light Mode" onClick={darkLightToggle}>
                 <MdOutlineLightMode />
             </button>
         )

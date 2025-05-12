@@ -2,7 +2,6 @@
 import {useState} from 'react';
 import Link from 'next/link'
 import PortfolioNav from "@/components/ui/PortfolioNav";
-import BlogNav from "@/components/ui/BlogNav";
 
 type HeaderProps = {
     blog?: boolean
@@ -29,7 +28,7 @@ export default function Header({blog}:HeaderProps) {
             </button>
            
             <div id="navbar-default" className={`${navBarOpen ? 'mt-4' : 'hidden'}  w-full md:block md:w-auto`}>
-                {blog? <BlogNav/> : <PortfolioNav/>}
+                <PortfolioNav/>
             </div>
             </div>
         </header>

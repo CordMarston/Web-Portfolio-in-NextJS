@@ -14,7 +14,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="py-4 object-right order-1 md:order-2 my-auto">
-                    <Image src={ProfilePic} alt="Cord Marston 2023" className="float-right rounded-lg w-full lg:max-w-[80%]"/>
+                    <Image src={ProfilePic} alt="Cord Marston 2023" className="float-right rounded-lg w-full lg:max-w-[80%]" priority/>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ import { IoIosDocument } from "react-icons/io";
 
 export default function PortfolioNav() {
     const scrollPage = (e:any) => {
+        e.preventDefault();
         let section = e.target.dataset.section;
         if(section) {
             let element = document.getElementById(section);
@@ -16,10 +17,10 @@ export default function PortfolioNav() {
 
     return (
         <ul className="flex flex-col md:flex-row items-center gap-12 uppercase text-xs text-right inline ">
-            <li><a className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="about">About</a></li>
-            <li><a className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="skills">Skills</a></li>
-            <li><a className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="projects">Projects</a></li>
-            <li><a className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="contact">Contact</a></li>
+            <li><a href="#about" className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="about">About</a></li>
+            <li><a href="#skills" className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="skills">Skills</a></li>
+            <li><a href="#projects" className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="projects">Projects</a></li>
+            <li><a href="#contact" className="cursor-pointer dark:hover:text-sky-300 hover:text-sky-700 tracking-wide" onClick={scrollPage} data-section="contact">Contact</a></li>
             <li>
                 <a className="dark:hover:text-sky-300 hover:text-sky-700 text-xl" aria-label="github" href="https://github.com/CordMarston" target="_blank" title="GitHub">
                     <FaGithub />

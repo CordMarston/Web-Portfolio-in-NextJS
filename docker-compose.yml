@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   web:
-    container_name: ssd_portfolio_cordmarston_com
+    container_name: cordmarston_com
     build:
       context: ./
       target: runner
